@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>photos</title>
+	<script type="text/javascript">
+		(function(){
+			var tags = "section,aside".split(",");
+			while(tags.length) document.createElement(tags.pop());
+		});
+	</script>
+	<style type="text/css">
+		#photos img{
+			max-width: 160px;
+			max-height: 160px;
+		}
+		a:hover, a:visited, a:link{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+
+	<section id="photos">
+		
+	</section>
+
+	<script type="text/template" id = "photo">
+		<a href="{commentURL}">
+			<img src="{imageURL}" />
+		</a>
+	</script>
+	<script type="text/javascript" src="photo.js"></script>
+</body>
+</html>
